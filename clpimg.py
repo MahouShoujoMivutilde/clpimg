@@ -4,6 +4,7 @@ from PyQt5 import QtCore, QtGui
 from os import path
 import sys
 import re
+import subprocess as sp
 
 DESC = f"""
 {path.basename(__file__)} is a simple script to copy images to clipboard
@@ -40,15 +41,4 @@ if __name__ == '__main__':
 
     reader = QtGui.QImageReader(sys.argv[1])
     assert reader.canRead(), f'failed to read image - {reader.errorString()}'
-    image = reader.read()
-
-    clipboard = app.clipboard()
-
-    clipboard.setImage(image)
-
-    # important. let it wait for new clips (text & etc)
-    # and only THEN die. otherwise on-the-fly conversion
-    # to compatible TARGET will not work
-    clipboard.dataChanged.connect(app.exit)
-
-    app.exec()
+    sp.Popen(['clpimg-daemon.py', sys.argv[1]])
