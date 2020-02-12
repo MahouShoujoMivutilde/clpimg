@@ -58,6 +58,8 @@ cd clpimg
 make install
 ```
 
+Don't forget to install PyQt5.
+
 ## Usage
 
 ```
