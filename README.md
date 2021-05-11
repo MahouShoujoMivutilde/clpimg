@@ -93,7 +93,7 @@ notify-send "clipped image" "$(basename "$1")" -i "$thumb"
 ```
 ...to get
 
-![](https://i.imgur.com/1DnThks.jpg)
+![](docs/clp.png)
 
 ## Downsides
 
