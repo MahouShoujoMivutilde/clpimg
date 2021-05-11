@@ -52,6 +52,8 @@ SAVE_TARGETS
 
 ## Installation
 
+### Manual
+
 ```
 git clone https://github.com/MahouShoujoMivutilde/clpimg
 cd clpimg
@@ -59,6 +61,16 @@ make install
 ```
 
 Don't forget to install PyQt5.
+
+### AUR
+
+[clpimg](https://aur.archlinux.org/packages/clpimg/) is maintained by @arpanetus
+
+```
+clpimg
+```
+
+You probably already know how to install it ;)
 
 ## Usage
 
