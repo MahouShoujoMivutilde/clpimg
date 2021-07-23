@@ -65,6 +65,7 @@ Don't forget to install PyQt5.
 ### AUR
 
 [clpimg](https://aur.archlinux.org/packages/clpimg/) is maintained by @arpanetus
+
 [clpimg-git](https://aur.archlinux.org/packages/clpimg-git/) is maintained by myself.
 
 ```
