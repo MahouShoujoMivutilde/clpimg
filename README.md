@@ -54,7 +54,7 @@ SAVE_TARGETS
 
 ### Manual
 
-```
+```sh
 git clone https://github.com/MahouShoujoMivutilde/clpimg
 cd clpimg
 make install
@@ -65,9 +65,12 @@ Don't forget to install PyQt5.
 ### AUR
 
 [clpimg](https://aur.archlinux.org/packages/clpimg/) is maintained by @arpanetus
+[clpimg-git](https://aur.archlinux.org/packages/clpimg-git/) is maintained by myself.
 
 ```
 clpimg
+# or
+clpimg-git
 ```
 
 You probably already know how to install it ;)
@@ -91,7 +94,7 @@ inspired by:
 
 notify-send supports images, so you could wrap this script in something like
 
-```
+```sh
 #!/usr/bin/env sh
 
 thumb="$XDG_RUNTIME_DIR/thumb.jpg"
